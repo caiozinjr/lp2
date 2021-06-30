@@ -75,10 +75,10 @@ public class LP2_Trabalho
 
                 Console.Clear();  
                 
-                Console.Write("Digite o nome do seu jogador: ");
+                Console.Write("Insira o nome do seu jogador: ");
                 var np = Console.ReadLine();
               
-                Console.Write("Digite a quantidade de XP (experiência): ");
+                Console.Write("Insira a quantidade de XP (experiência): ");
                 var xpP = Console.ReadLine();
                
                 Random randNum = new Random();
@@ -89,7 +89,6 @@ public class LP2_Trabalho
                 Console.Clear();
 
                 Console.WriteLine("Jogador criado com sucesso");
-                Console.WriteLine("");
                 Console.WriteLine("Verifique o seu gold (gerado de forma aleatoria): " + dinDin);
                 Console.WriteLine("Tecle 'ENTER' para continuar...");
                 Console.ReadLine();
@@ -100,22 +99,22 @@ public class LP2_Trabalho
                 for (int i = 0; i < Players.Count; i++)
                 {
 
-                    Console.WriteLine("");
+                   
                     Console.WriteLine("Jogador:");            
                     Console.WriteLine("Nome : " + Players[i].nome);
                     Console.WriteLine("XP : " + Players[i].xp);
                     Console.WriteLine("Gold : " + Players[i].gold);                 
-                    Console.WriteLine("");
+                  
                 }
 
-                Console.WriteLine("");
+              
                 Console.Write("Pressione qualquer tecla para sair...");
                 Console.ReadKey();
                 return true;
             
             case "3":
             Console.Clear();
-            Console.WriteLine("Digite o nome do jogador para verificar o iventário:");
+            Console.WriteLine("Insira o nome do jogador para verificar o iventário:");
             var pq = Console.ReadLine();
             foreach(Player p in Players)
             {
@@ -140,7 +139,7 @@ public class LP2_Trabalho
 
             case "4":
             Console.Clear();
-            Console.WriteLine("Digite o nome do jogador que irá acessar a loja: ");
+            Console.WriteLine("Insira o nome do jogador que irá acessar a loja: ");
             pq = Console.ReadLine();
             foreach(Player p in Players)
             {
@@ -177,13 +176,13 @@ public class LP2_Trabalho
                                 p.Itens.Add(machado);
                                 Console.Clear();
                                 Console.WriteLine("-Item adicionado ao iventário com sucesso!");
-                                Console.WriteLine("-Velho Phill");
-                                Console.WriteLine("Hehehe. Muito obrigado, volte sempre!");
+                                Console.WriteLine("-Velho Will");
+                                Console.WriteLine("Muito obrigado, volte sempre!");
                                 Console.ReadLine();
                             }
                             else
                             {
-                                Console.WriteLine("Você quer me roubar? Quer comprar má não tem dinheiro. Sai daqui!");
+                                Console.WriteLine("Você quer me roubar? Quer comprar mas não tem dinheiro. Sai daqui!");
                                 Console.ReadLine();
                             }
                         }
@@ -203,13 +202,13 @@ public class LP2_Trabalho
                                 p.Itens.Add(growsword);
                                 Console.Clear();
                                 Console.WriteLine("-Item adicionado ao iventário com sucesso!");
-                                Console.WriteLine("-Velho Phill");
-                                Console.WriteLine("Hehehe. Muito obrigado, volte sempre!");
+                                Console.WriteLine("-Velho Will");
+                                Console.WriteLine(" Muito obrigado, volte sempre!");
                                 Console.ReadLine();
                             }
                             else
                             {
-                                Console.WriteLine("Você quer me roubar? Quer comprar má não tem dinheiro >:( . Sai daqui!");
+                                Console.WriteLine("Você quer me roubar? Quer comprar mas não tem dinheiro >:( . Sai daqui!");
                                 Console.ReadLine();
                             }
                         }
@@ -228,13 +227,13 @@ public class LP2_Trabalho
                                 p.Itens.Add(rsword);
                                 Console.Clear();
                                 Console.WriteLine("-Item adicionado ao iventário com sucesso!");
-                                Console.WriteLine("-Velho Phill");
-                                Console.WriteLine("Hehehe. Muito obrigado, volte sempre!");
+                                Console.WriteLine("-Velho Will");
+                                Console.WriteLine("Muito obrigado, volte sempre!");
                                 Console.ReadLine();
                             }
                             else
                             {
-                                Console.WriteLine("Você quer me roubar? Quer comprar má não tem dinheiro >:( . Sai daqui!");
+                                Console.WriteLine("Você quer me roubar? Quer comprar mas não tem dinheiro >:( . Sai daqui!");
                                 Console.ReadLine();
                             }
                         }
@@ -242,7 +241,7 @@ public class LP2_Trabalho
                         break;
 
                         case "059":
-                        Console.WriteLine("Você gostaria de comprar Bbow por 90G? (S)/(N)");
+                        Console.WriteLine("Você  de comprar Bbow por 90G? (S)/(N)");
                         Console.WriteLine("Seu ouro:" + p.gold);
                         resp = Console.ReadLine();
                         if(resp == "S")
@@ -253,13 +252,13 @@ public class LP2_Trabalho
                                 p.Itens.Add(bow);
                                 Console.Clear();
                                 Console.WriteLine("-Item adicionado ao iventário com sucesso!");
-                                Console.WriteLine("-Velho Phill");
-                                Console.WriteLine("Hehehe. Muito obrigado, volte sempre!");
+                                Console.WriteLine("-Velho Will");
+                                Console.WriteLine("Muito obrigado, volte sempre!");
                                 Console.ReadLine();
                             }
                             else
                             {
-                                Console.WriteLine("Você quer me roubar? Quer comprar má não tem dinheiro >:( . Sai daqui!");
+                                Console.WriteLine("Você quer me roubar? Quer comprar mas não tem dinheiro >:( . Sai daqui!");
                                 Console.ReadLine();
                             }
                         }
@@ -267,7 +266,7 @@ public class LP2_Trabalho
                         break;
 
                         case "700":
-                        Console.WriteLine("Você gostaria de comprar Last Bomb por 75G? (S)/(N)");
+                        Console.WriteLine("Você teria o interesse de comprar Last Bomb por 75G? (S)/(N)");
                         Console.WriteLine("Seu ouro:" + p.gold);
                         resp = Console.ReadLine();
                         if(resp == "S")
@@ -278,13 +277,13 @@ public class LP2_Trabalho
                                 p.Itens.Add(bomba);
                                 Console.Clear();
                                 Console.WriteLine("-Item adicionado ao iventário com sucesso!");
-                                Console.WriteLine("-Velho Phill");
-                                Console.WriteLine("Hehehe. Muito obrigado, volte sempre!");
+                                Console.WriteLine("-Velho Will");
+                                Console.WriteLine("Muito obrigado, volte sempre!");
                                 Console.ReadLine();
                             }
                             else
                             {
-                                Console.WriteLine("Você quer me roubar? Quer comprar má não tem dinheiro >:( . Sai daqui!");
+                                Console.WriteLine("Você quer me roubar? Quer comprar mas não tem dinheiro >:( . Sai daqui!");
                                 Console.ReadLine();
                             }
                         }
@@ -300,7 +299,7 @@ public class LP2_Trabalho
                 }
                 else{
                     Console.Clear();
-                    Console.WriteLine("Nenhum jogador encontrado... É necessário ter um jogador registrado");
+                    Console.WriteLine("Jogador nenhum encontrado... É essencial ter um jogador registrado");
                     Console.WriteLine("para acessar a loja. Retornando ao menu principal...");
                     Console.ReadLine();
                 }
